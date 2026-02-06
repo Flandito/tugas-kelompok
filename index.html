@@ -1,129 +1,184 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Los Polos Hermanos | Fashion Store</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Pollos Hermanos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              heading: ["Poppins", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
 
-<body class="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-500">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Navbar -->
-  <nav class="bg-white shadow-md px-8 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-500">
-      Los Polos Hermanos
-    </h1>
-    <div class="flex items-center gap-6 text-sm">
-      <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
-      <a href="#" class="text-gray-600 hover:text-blue-500">Shop</a>
-      <a href="#" class="text-gray-600 hover:text-blue-500">Collections</a>
-      <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
-      <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-        Login
-      </a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="px-10 py-20 grid md:grid-cols-2 gap-10 items-center">
-    <div class="text-white">
-      <h2 class="text-5xl font-bold leading-tight">
-        Tampil Percaya Diri  
-        <span class="text-cyan-300">Dengan Gaya Terbaik</span>
-      </h2>
-      <p class="mt-6 text-lg opacity-90">
-        Temukan koleksi fashion terbaru dengan desain modern, nyaman, dan berkualitas tinggi.
-      </p>
-      <div class="mt-8 flex gap-4">
-        <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
-          Belanja Sekarang
-        </a>
-        <a href="#" class="border border-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-500 transition">
-          Lihat Koleksi
-        </a>
-      </div>
-    </div>
-
-    <div class="bg-white rounded-lg shadow-lg p-6">
-      <img
-        src="https://images.unsplash.com/photo-1521334884684-d80222895322"
-        alt="Fashion"
-        class="rounded-lg object-cover w-full h-80"
-      />
-    </div>
-  </section>
-
-  <!-- Featured Products -->
-  <section class="bg-white rounded-t-3xl px-10 py-16">
-    <h3 class="text-3xl font-bold text-center text-blue-500 mb-10">
-      Produk Unggulan
-    </h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Product Card -->
-      <div class="rounded-lg shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" class="h-64 w-full object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-lg">Jacket Casual</h4>
-          <p class="text-gray-500 text-sm mt-1">Nyaman & stylish</p>
-          <div class="flex justify-between items-center mt-4">
-            <span class="font-bold text-blue-500">Rp 350.000</span>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-              Beli
-            </button>
-          </div>
+  <body class="font-sans text-gray-800">
+    <nav class="bg-red-700 text-white fixed w-full top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <img src="/img/logo.webp" class="h-10" />
+          <span class="font-heading font-bold text-xl">
+            Los Pollos Hermanos
+          </span>
         </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 font-body">
+          <li>
+            <a href="index.html" class="hover:text-yellow-400 transition">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#menu" class="hover:text-yellow-400 transition"> Menu </a>
+          </li>
+
+          <li>
+            <a href="#about" class="hover:text-yellow-400 transition">
+              About us
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="login.html"
+              class="bg-yellow-400 text-red-800 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition"
+            >
+              Login
+            </a>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <!-- Product Card -->
-      <div class="rounded-lg shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" class="h-64 w-full object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-lg">T-Shirt Premium</h4>
-          <p class="text-gray-500 text-sm mt-1">Bahan lembut & awet</p>
-          <div class="flex justify-between items-center mt-4">
-            <span class="font-bold text-blue-500">Rp 180.000</span>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
+    <!-- Hero -->
+    <header
+      class="bg-[url('/img/hero.jpg')] bg-cover bg-center relative min-h-screen flex items-center justify-center text-center px-6 pt-24"
+    >
+      <div class="absolute inset-0 bg-black/70"></div>
 
-      <!-- Product Card -->
-      <div class="rounded-lg shadow-lg overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f" class="h-64 w-full object-cover">
-        <div class="p-4">
-          <h4 class="font-bold text-lg">Sneakers Modern</h4>
-          <p class="text-gray-500 text-sm mt-1">Ringan & trendi</p>
-          <div class="flex justify-between items-center mt-4">
-            <span class="font-bold text-blue-500">Rp 520.000</span>
-            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
-              Beli
-            </button>
-          </div>
-        </div>
-      </div>
+      <div class="relative z-10 max-w-3xl">
+        <h1
+          class="font-heading text-4xl sm:text-5xl md:text-6xl text-yellow-400 mb-6 drop-shadow-lg"
+        >
+          Ayam Goreng Legendaris
+        </h1>
 
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 px-10 py-8">
-    <div class="flex flex-col md:flex-row justify-between">
-      <div>
-        <h4 class="font-bold text-white text-lg">Los Polos Hermanos</h4>
-        <p class="text-sm mt-2">
-          Fashion berkualitas untuk gaya hidup modern.
+        <p class="font-body text-white mb-8 text-lg">
+          Kualitas. Konsistensi. Keluarga.
+          <br />
+          <span class="italic">Taste the Family.</span>
         </p>
-      </div>
-      <div class="text-sm mt-4 md:mt-0">
-        © 2026 Los Polos Hermanos. All rights reserved.
-      </div>
-    </div>
-  </footer>
 
-</body>
+        <a
+          href="#menu"
+          class="inline-block bg-yellow-400 text-black px-10 py-4 rounded-full font-semibold hover:bg-yellow-500 transition duration-300 shadow-lg"
+        >
+          Lihat Menu
+        </a>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-20 px-6 bg-white">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <img
+          src="/img/about.webp"
+          alt="Los Pollos Hermanos Restaurant"
+          class="rounded-xl shadow-lg"
+        />
+        <div>
+          <h3 class="text-3xl font-bold mb-4">Tentang Kami</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Los Pollos Hermanos adalah restoran cepat saji keluarga yang
+            terkenal dengan ayam goreng berkualitas tinggi dan pelayanan yang
+            ramah. Kami percaya bahwa setiap pelanggan adalah bagian dari
+            keluarga kami.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="py-20 px-6 bg-gray-100">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-12">Menu Favorit</h3>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Card -->
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec"
+              alt="Fried Chicken"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-6 text-center">
+              <h4 class="text-xl font-semibold mb-2">Fried Chicken</h4>
+              <p class="text-gray-600">
+                Ayam goreng renyah dengan bumbu rahasia
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+              alt="Chicken Burger"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-6 text-center">
+              <h4 class="text-xl font-semibold mb-2">Chicken Burger</h4>
+              <p class="text-gray-600">Burger ayam juicy dengan saus spesial</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow overflow-hidden">
+            <img
+              src="https://media.istockphoto.com/id/483530333/photo/spicy-seasoned-curly-fries.webp?a=1&b=1&s=612x612&w=0&k=20&c=fX6w_rrcVtLCje12GZNYfLjyjYc63pmpslWtL53sQvY="
+              alt="Curly Fries"
+              class="h-48 w-full object-cover"
+            />
+            <div class="p-6 text-center">
+              <h4 class="text-xl font-semibold mb-2">Curly Fries</h4>
+              <p class="text-gray-600">Kentang spiral gurih dan renyah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 px-6 bg-red-700 text-white text-center">
+      <h3 class="text-3xl font-bold mb-4">Datang & Rasakan Bedanya</h3>
+      <p class="mb-8">Los Pollos Hermanos – rasa yang selalu konsisten.</p>
+      <a
+        href="contact.html"
+        class="bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
+      >
+        Hubungi Kami
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-gray-300 py-6 text-center">
+      <p class="text-sm">© 2026 Los Pollos Hermanos — Semua Hak Dilindungi</p>
+    </footer>
+  </body>
 </html>
