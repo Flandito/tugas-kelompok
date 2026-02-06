@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Polos Hermanos | Fashion Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-500">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md px-8 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-500">
+      Los Polos Hermanos
+    </h1>
+    <div class="flex items-center gap-6 text-sm">
+      <a href="#" class="text-gray-600 hover:text-blue-500">Home</a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">Shop</a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">Collections</a>
+      <a href="#" class="text-gray-600 hover:text-blue-500">About</a>
+      <a href="login.html" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+        Login
+      </a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-10 py-20 grid md:grid-cols-2 gap-10 items-center">
+    <div class="text-white">
+      <h2 class="text-5xl font-bold leading-tight">
+        Tampil Percaya Diri  
+        <span class="text-cyan-300">Dengan Gaya Terbaik</span>
+      </h2>
+      <p class="mt-6 text-lg opacity-90">
+        Temukan koleksi fashion terbaru dengan desain modern, nyaman, dan berkualitas tinggi.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#" class="bg-white text-blue-500 px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition">
+          Belanja Sekarang
+        </a>
+        <a href="#" class="border border-white px-6 py-3 rounded-md font-semibold hover:bg-white hover:text-blue-500 transition">
+          Lihat Koleksi
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6">
+      <img
+        src="https://images.unsplash.com/photo-1521334884684-d80222895322"
+        alt="Fashion"
+        class="rounded-lg object-cover w-full h-80"
+      />
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="bg-white rounded-t-3xl px-10 py-16">
+    <h3 class="text-3xl font-bold text-center text-blue-500 mb-10">
+      Produk Unggulan
+    </h3>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Product Card -->
+      <div class="rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" class="h-64 w-full object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Jacket Casual</h4>
+          <p class="text-gray-500 text-sm mt-1">Nyaman & stylish</p>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-blue-500">Rp 350.000</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+              Beli
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" class="h-64 w-full object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">T-Shirt Premium</h4>
+          <p class="text-gray-500 text-sm mt-1">Bahan lembut & awet</p>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-blue-500">Rp 180.000</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+              Beli
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card -->
+      <div class="rounded-lg shadow-lg overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542060748-10c28b62716f" class="h-64 w-full object-cover">
+        <div class="p-4">
+          <h4 class="font-bold text-lg">Sneakers Modern</h4>
+          <p class="text-gray-500 text-sm mt-1">Ringan & trendi</p>
+          <div class="flex justify-between items-center mt-4">
+            <span class="font-bold text-blue-500">Rp 520.000</span>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition">
+              Beli
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 px-10 py-8">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div>
+        <h4 class="font-bold text-white text-lg">Los Polos Hermanos</h4>
+        <p class="text-sm mt-2">
+          Fashion berkualitas untuk gaya hidup modern.
+        </p>
+      </div>
+      <div class="text-sm mt-4 md:mt-0">
+        © 2026 Los Polos Hermanos. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
